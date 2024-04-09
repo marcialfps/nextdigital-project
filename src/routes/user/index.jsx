@@ -31,7 +31,7 @@ export default function UserDetails() {
             <ul>
               {albums.map((album) => (
                 <li key={album.id}>
-                  <a href={`albums/${album.id}`}>{album.title}</a>
+                  <a href={`../albums/${album.id}`}>{album.title}</a>
                   <img
                     style={{ height: "100px" }}
                     src={album.photos[0].url}

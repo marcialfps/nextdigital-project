@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import UserDetails from "./routes/user";
+import AlbumDetails from "./routes/album";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "users/:userId",
     element: <UserDetails />,
+  },
+  {
+    path: "albums/:albumId",
+    element: <AlbumDetails />,
   },
 ]);
 
